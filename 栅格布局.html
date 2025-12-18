@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>栅格布局</title>
+    <style>
+      .item1{grid-column: a;background-color: khaki;}
+        .item2{grid-column:b;background-color: lightgreen;}
+        .item3{grid-column:c;background-color: lightblue;}
+        .item4{grid-column:d;background-color: lightcoral;}
+        .item5{grid-column:e;background-color: lightgray;}
+        .item6{grid-column:f;background-color: lightpink;}
+        .grid-container{
+            display: grid;
+            grid-template-areas: 
+            'a a a b'
+            'c d e f';
+            grid-gap:10px;
+            padding: 10px;
+            border: 1px solid black;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 40vh 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+    <div class="item1">学校要闻</div>
+    <div class="item2">快速链接</div>
+    <div class="item3">通知公告</div>
+    <div class="item4">科学研究</div>
+    <div class="item5">综合新闻</div>
+    <div class="item6">专题网站</div>
+</body>
+</html>
